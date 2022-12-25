@@ -18,7 +18,7 @@ Console.WriteLine($"{CutNumber(num)}");
 /*
 int CutNumber(int number)
 {
-    if (number >=100)
+    if (number >= 100)
     {
         while (number > 999)
             {
