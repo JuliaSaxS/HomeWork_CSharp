@@ -22,7 +22,7 @@ while (i > 0)
 Console.WriteLine("The sum of all digits of the entered number is equal to " + sum);
 */
 // Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
-
+/*
 //Метод создания массива:
 
 int[] CrateArray(int size)
@@ -53,3 +53,4 @@ int length = Convert.ToInt32(Console.ReadLine());
 
 int[] newArray = CrateArray(length);
 ShowArray(newArray);
+*/
