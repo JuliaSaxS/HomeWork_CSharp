@@ -1,17 +1,15 @@
 ﻿// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 /*
-Console.Write("Enter some numbers using a space: ");
+Console.Write("Input some numbers with using a space and press enter: ");
+
 int[] array = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 int count = 0;
  
 for (int i = 0; i < array.Length; i++)
 {
-    if (array[i] > 0)
-    {
-        count++;
-    }
+    if (array[i] > 0) count++;
 }
- 
+
 Console.WriteLine($"Entered {count} numbers that are greater than 0.");
 */
 
