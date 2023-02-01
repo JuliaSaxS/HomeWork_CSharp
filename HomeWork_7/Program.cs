@@ -86,7 +86,7 @@ else
 // Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
 Console.Write("Enter the number of strings:  ");
-int linesVol = Convert.ToInt32(Console.ReadLine());
+int linesVol  = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter the number of columns: ");
 int columnsVol = Convert.ToInt32(Console.ReadLine());
 double[,] numbers = new double[linesVol, columnsVol];
