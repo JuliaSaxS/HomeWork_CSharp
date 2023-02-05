@@ -65,15 +65,15 @@ int Ackerman(int m, int n)
   else return Ackerman(m - 1, Ackerman(m, n - 1));
 }
 
-int ShowNumbers(string input) 
+int InputNumbers(string input) 
 {
   Console.Write(input);
   int output = Convert.ToInt32(Console.ReadLine());
   return output;
 }
 
-int m = ShowNumbers("Input the number m: ");
-int n = ShowNumbers("Input the number n: ");
+int m = InputNumbers("Input the number m: ");
+int n = InputNumbers("Input the number n: ");
 
 int AckermanFunction = Ackerman(m, n);
 
