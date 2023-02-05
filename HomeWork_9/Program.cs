@@ -26,7 +26,7 @@ ShowNumbers(num, count);
 if (num < 0 ) Console.Write("Input error.");
 */
 // Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
-
+/*
 int m = InputNumbers("Input the number M: ");
 int n = InputNumbers("Input the number N: ");
 int temp = m;
@@ -55,9 +55,27 @@ int InputNumbers(string input)
     int output = Convert.ToInt32(Console.ReadLine());
     return output;
 }
-
+*/
 // Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
+int Ackerman(int m, int n)
+{
+  if (m == 0) return n + 1;
+  else if (n == 0) return Ackerman(m - 1, 1);
+  else return Ackerman(m - 1, Ackerman(m, n - 1));
+}
 
+int ShowNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
 
+int m = ShowNumbers("Input the number m: ");
+int n = ShowNumbers("Input the number n: ");
+
+int AckermanFunction = Ackerman(m, n);
+
+Console.Write($"The Ackerman function is equal to {AckermanFunction}.");
 
